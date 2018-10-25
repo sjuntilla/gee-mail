@@ -1,0 +1,78 @@
+/*--------------------GENERAL STYLING--------------------*/
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300');
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: rgb(237,246,238);
+	background: url("images/bg.jpg") no-repeat fixed center;
+	background-size: cover;
+ 	color: rgb(71, 71, 71);
+}
+
+/*--------------------HEADERS--------------------*/
+h1, h2, h3, h4 {
+	font-size: 40px;
+	font-family:'Anton', sans-serif;
+	background-color: rgb(185,193,178);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	color: rgb(245,169,153);
+	opacity: 0.9;
+	text-shadow: 2px 2px rgb(77,77,77);
+	text-align: justify;
+}
+
+/*--------------------DIVS--------------------*/
+div {
+	font-family: 'Open Sans Condensed', sans-serif;
+ 	color: rgb(71, 71, 71);
+ 	padding-bottom: 100px;
+}
+
+.header {
+	height: 150px;
+	position: 0;
+}
+
+/*--------------------PARA--------------------*/
+
+p {
+	font-size: 40px;
+	width: 100%;
+	font-family:'Anton', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	color: rgb(245,169,153);
+	opacity: 0.9;
+	text-shadow: 2px 2px rgb(77,77,77);
+	text-align: right;
+	background-color: rgb(185,193,178);
+}
+
+/*--------------------TABLE--------------------*/
+table {
+	width: 75%;
+	border: 5px solid;
+	border-radius: 10px;
+	border-color: rgb(211,212,196);
+	background-color: rgb(211,212,196);
+	opacity: 0.9;
+	text-align: justify;
+}
+
+th {
+	font-family: 'Anton', sans-serif;
+	font-size: 16pt;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	background-color: rgb(179,203,189);
+	padding: 5px;
+}
+
+tr {
+	padding-left: 10px;
+	font-size: 14pt;
+	background-color: rgb(185,193,178);
+}

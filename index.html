@@ -6,13 +6,42 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+
+        var inbox_count = document.createElement('p');
+        var number = document.createTextNode('Inbox (' + window.geemails.length + ')');
+        document.body.appendChild(inbox_count);
+        inbox_count.appendChild(number);
+
+
+        var table = document.querySelector('tbody');
+        var items = ["sender", "subject", "date"]
+
+        for (var i = 0; i < 10; i++) {
+        	var email = document.createElement('tr');
+        	for (var j = 0; j < 3; j++) {
+        		var cell = email.insertCell(0);
+        		cell.innerHTML = window.geemails[i][items[j]];
+        	}  
+        	table.appendChild(email);
+        }
+
         
       };
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
-			Build Me!
+			<div id="header"><h1>✱ Geemail</h1></div>
+			<table id="inbox" align="center">
+				<thead>
+				<tr>
+					<th>Date</th>
+					<th>Subject</th>
+					<th>Sender</th>
+				</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
 		</div>
 	</body>
 </html>
