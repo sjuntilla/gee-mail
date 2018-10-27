@@ -30,6 +30,7 @@
         		emailbody.innerHTML = `<p class="email">${window.geemails[i].body}</p>`;
         	}
         }
+
         function getEmails() {
         	var newMessage = window.getNewMessage();
         	var newEmail = document.createElement('tr');
@@ -38,7 +39,7 @@
         	table.appendChild(newEmail);
         }
 
-					setInterval(getEmails, 100);
+					setInterval(getEmails, 8000);
         
       };
     </script>
