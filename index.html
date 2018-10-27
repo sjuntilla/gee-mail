@@ -30,7 +30,15 @@
         		emailbody.innerHTML = `<p class="email">${window.geemails[i].body}</p>`;
         	}
         }
+        function getEmails() {
+        	var newMessage = window.getNewMessage();
+        	var newEmail = document.createElement('tr');
+        	var newCell = newEmail.insertCell(0);
+        	newCell.innerHTML = newMessage;
+        	table.appendChild(newEmail);
+        }
 
+					setInterval(getEmails, 100);
         
       };
     </script>
@@ -38,7 +46,7 @@
 	<body>
 		<div class="container" id="main">
 			<div id="header"><h1>✱ Geemail</h1></div>
-			<div id="emailbody"><span></span></div>
+			<div id="emailbody" align="center"><span></span></div>
 			<table id="inbox" align="center">
 				<thead>
 				<tr>
