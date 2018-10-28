@@ -23,23 +23,32 @@
         		var cell = email.insertCell(0);
         		cell.innerHTML = window.geemails[i][items[j]];
         	}  
-
         	table.appendChild(email);
+
         	email.onclick = function() {
         		var emailbody = document.querySelector('#emailbody');
         		emailbody.innerHTML = `<p class="email">${window.geemails[i].body}</p>`;
         	}
         }
+      
 
         function getEmails() {
-        	var newMessage = window.getNewMessage();
+        	var newMessage = getNewMessage();
         	var newEmail = document.createElement('tr');
-        	var newCell = newEmail.insertCell(0);
-        	newCell.innerHTML = newMessage;
+        	for (var j = 0; j < 3; j++) {
+        		var newCell = newEmail.insertCell(0);
+        		newCell.innerHTML = newMessage[items[j]];
+        	
+        }
         	table.appendChild(newEmail);
+
+        	newEmail.onclick = function() {
+        		var emailbody = document.querySelector('#emailbody');
+        		emailbody.innerHTML = `<p class="email">${newMessage.body}</p>`;
+        	}
         }
 
-					setInterval(getEmails, 8000);
+					setInterval(getEmails, 500);
         
       };
     </script>
