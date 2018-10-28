@@ -7,9 +7,9 @@
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
 
-        var inbox_count = document.createElement('h2');
-        var number = document.createTextNode('Inbox (' + window.geemails.length + ')');
-        document.body.appendChild(inbox_count);
+        var inbox_count = document.querySelector('h1');
+        var inbox_number = window.geemails.length;
+        var number = document.createTextNode(' Inbox (' + inbox_number + ')');
         inbox_count.appendChild(number);
 
 
@@ -41,14 +41,17 @@
         	
         }
         	table.appendChild(newEmail);
-
+        	inbox_number++;
+        	inbox_count.innerText = '✱ Geemail Inbox (' + inbox_number + ')';
         	newEmail.onclick = function() {
         		var emailbody = document.querySelector('#emailbody');
         		emailbody.innerHTML = `<p class="email">${newMessage.body}</p>`;
         	}
+
+
         }
 
-					setInterval(getEmails, 500);
+					setInterval(getEmails, 2000);
         
       };
     </script>
