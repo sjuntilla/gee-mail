@@ -3,23 +3,44 @@
 
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
-	background-color: rgb(237,246,238);
-	background-size: cover;
+	background-color: rgb(248,237,209);
  	color: rgb(71, 71, 71);
 }
 
+b {
+	font-size: 20px;
+}
+
+i {
+	font-size: 20px;
+	color: rgb(216,138,138);
+}
+
 /*--------------------HEADERS--------------------*/
-h1, h2, h3, h4 {
+h1, h2{
 	font-size: 40px;
 	font-family:'Anton', sans-serif;
-	background-color: rgb(185,193,178);
+	background-color: rgb(197,207,198);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 1.5em;
-	color: rgb(245,169,153);
+	color: rgb(216,138,138);
 	opacity: 0.9;
 	text-shadow: 2px 2px rgb(77,77,77);
 	text-align: justify;
+}
+
+h3 {
+	font-size: 25px;
+	font-family:'Anton', sans-serif;
+	background-color: rgb(197,207,198);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgb(216,138,138);
+	text-shadow: 2px 2px rgb(77,77,77);
+	text-align: justify;
+}
+
 }
 
 /*--------------------DIVS--------------------*/
@@ -35,8 +56,7 @@ div {
 }
 
 #emailbody {
-	width: 75%;
-	padding: 5px;
+	width: 770px;
 	border: 5px solid;
 	border-radius: 10px;
 	border-color: rgb(211,212,196);
@@ -44,9 +64,10 @@ div {
 	opacity: 0.9;
 	text-align: justify;
 	position: absolute;
-	left: 200px;
-	top: 75px;
+	left: 795px;
+	top: 200px;
 }
+
 
 /*--------------------PARA--------------------*/
 
@@ -59,7 +80,7 @@ p {
 
 /*--------------------TABLE--------------------*/
 table {
-	width: 75%;
+	width: 770px;
 	border: 5px solid;
 	border-radius: 10px;
 	border-color: rgb(211,212,196);
