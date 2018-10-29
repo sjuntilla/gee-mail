@@ -4,7 +4,7 @@
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: rgb(248,237,209);
- 	color: rgb(71, 71, 71);
+ 	color: rgb(85,68,61);
 }
 
 b {
@@ -20,7 +20,7 @@ i {
 h1, h2{
 	font-size: 40px;
 	font-family:'Anton', sans-serif;
-	background-color: rgb(197,207,198);
+	background-color: rgb(205,233,202);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 1.5em;
@@ -33,7 +33,7 @@ h1, h2{
 h3 {
 	font-size: 25px;
 	font-family:'Anton', sans-serif;
-	background-color: rgb(197,207,198);
+	background-color: rgb(205,233,202);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: rgb(216,138,138);
@@ -58,14 +58,15 @@ div {
 #emailbody {
 	width: 770px;
 	border: 5px solid;
+	padding: 5px;
 	border-radius: 10px;
-	border-color: rgb(211,212,196);
-	background-color: rgb(211,212,196);
+	border-color: rgb(85,68,61);
+	background-color: rgb(205,233,202);
 	opacity: 0.9;
 	text-align: justify;
 	position: absolute;
-	left: 795px;
-	top: 200px;
+	left: 815px;
+	top: 190px;
 }
 
 
@@ -80,11 +81,11 @@ p {
 
 /*--------------------TABLE--------------------*/
 table {
-	width: 770px;
+	width: 790px;
 	border: 5px solid;
 	border-radius: 10px;
-	border-color: rgb(211,212,196);
-	background-color: rgb(211,212,196);
+	border-color: rgb(85,68,61);
+	background-color: rgb(85,68,61);
 	opacity: 0.9;
 	text-align: justify;
 
@@ -95,12 +96,12 @@ th {
 	font-size: 16pt;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	background-color: rgb(179,203,189);
+	background-color: rgb(160,202,181);
 	padding: 5px;
 }
 
 tr {
 	padding-left: 10px;
 	font-size: 14pt;
-	background-color: rgb(185,193,178);
+	background-color: rgb(205,233,202);
 }
