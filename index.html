@@ -28,6 +28,11 @@
         	email.onclick = function() {
         		var emailbody = document.querySelector('#emailbody');
         		emailbody.innerHTML = `<b>${window.geemails[i].sender}</b> - <i>${window.geemails[i].subject}</i><br>${window.geemails[i].date} <p class="email">${window.geemails[i].body}</p>`;
+                if (emailbody.style.display === "none") {
+                    emailbody.style.display = "block";
+                } else {
+                    emailbody.style.display = "none";
+                }
         	}
         }
       
@@ -46,20 +51,29 @@
         	newEmail.onclick = function() {
         		var emailbody = document.querySelector('#emailbody');
         		emailbody.innerHTML = `<b>${newMessage.sender}</b> - <i>${newMessage.subject}</i><br>${newMessage.date} <p class="email">${newMessage.body}</p>`;
+                if (emailbody.style.display === "none") {
+                emailbody.style.display = "block";
+                } else {
+                emailbody.style.display = "none";
+                }
         	}
 
 
         }
 
+
+
 					setInterval(getEmails, 8000);
         
       };
+
+
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
 			<div id="header"><h1>✱ Geemail</h1></div>
-			<div id="emailbody" align="center"><span></span></div>
+			<div id="emailbody" style="display:none"><span></span></div>
 			<table id="inbox">
 				<thead>
 				<tr>
